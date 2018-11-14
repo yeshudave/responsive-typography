@@ -20,6 +20,7 @@ html {
 
 body {
   display: inline-block;
+  margin: 1rem;
 }
 
 article {
@@ -28,6 +29,7 @@ article {
 
 article h1 {
   font-weight: normal;
+  padding: 0 1rem;
 }
 
 article header {
@@ -42,6 +44,14 @@ article > p:last-child {
   border-bottom: 1px solid #999;
 }
 
+article p {
+  padding: 0 1rem;
+}
+
+article ol {
+  padding: 0 1rem;
+}
+
 blockquote {
   max-width: 24em;
   color: #555;
@@ -50,6 +60,15 @@ blockquote {
 
 .quote {
   color: #999;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    line-height: 1.3;
+    font-size: 100;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
